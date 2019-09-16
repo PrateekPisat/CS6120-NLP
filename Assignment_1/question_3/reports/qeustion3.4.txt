@@ -1,0 +1,12 @@
+Q3.4. Based on your observation from above questions, compare linear interpolation and add-lambda
+smoothing by listing out their pros and cons.
+
+-> Linear Interpolation helps us build a stronger or a more robust model, that performs better than
+the add-lambda smoothing model. As seen from the perplexities of the two models the Linear
+Interpolation model has a significantly low perplexity for both the files. However this model is
+very computationally complex; it took me about 11 minutes(669.9 seconds) to build the model and calculate
+perplexities for both files, since we need to build our lambdas on the held-out set.
+
+Add lambda smoothing, on the other had, merely took about a minute(87.7 seconds) to build to build
+and test the model. However, as mentioned above, it produced significantly high perplexities, even
+for the test file that was very similar to the training data.

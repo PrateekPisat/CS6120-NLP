@@ -1,0 +1,16 @@
+Q. Report the perplexity for each file in the test set (for both the λ values).
+->
+ perplexity(λ=0.1):
+  test01.txt = 6636.356565072647
+  test02.txt = 2754.233450897504
+
+  perplexity(λ=0.3):
+   test01.txt = 10938.787877520415
+   test02.txt = 5337.089816241469
+
+Q. Based on the test file’s perplexities you got write a brief observation comparing the test files.
+
+-> Since the first test file has a much higher perplexity as compared to the the second file, the
+first file consists of a lot of words that are not included in the training files/set. While the
+second file has a comparatively lower perplexity, indicating that the contents of it mush be
+similar to those of the training files/set

@@ -1,0 +1,17 @@
+Windows size = +-3
+The window would include 3 words before and after the head word. 
+
+Reasons:
+1. The window is large enough to include enough context to get the sense of the word and small enough to contain the size of the vocaulary.
+2. For N-Gram features, it allows to compute bigrams and trigrams to get context of the word.
+
+
+New Features:
+N-Grams
+To disambiguate word sense I build bigrams and trigrams aroung the target word. The inituition is to contruction bigrams and trigrams that
+lead up to and trail the target word, since that would provide the most context on the sense of the word. Consider the example explained in class:
+
+-> The guitar and <head>bass</head> player were wating outside the hall.
+Target = bass
+window = [(The, guitar), (guitar, and), (player, were), (were wating), (The guitar and), (player were wating)]
+As we can see, builing n-grams around the target word helps us indentify that here `bass` is used in context of music, and not the fish.

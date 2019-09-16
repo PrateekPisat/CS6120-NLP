@@ -1,0 +1,616 @@
+Top 10 Features per instance
+
+38201
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+38202
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+38203
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+U
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+38204
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+42601
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+42606
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+42603
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+42605
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+42604
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+42602
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+190902
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+190901
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+190903
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+argument%1:10:02::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+argument%1:10:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+argument%1:10:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+argument%1:10:03::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+argument%1:09:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+arm%1:08:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+arm%1:06:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+arm%1:06:03::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+arm%1:14:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+arm%1:06:02::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+238103
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+238102
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+238106
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+238101
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+238105
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+238104
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+atmosphere%1:07:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+atmosphere%1:26:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+atmosphere%1:17:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+atmosphere%1:15:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+atmosphere%1:26:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+audience%1:14:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+audience%1:14:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+audience%1:26:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+audience%1:10:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+bank%1:14:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+bank%1:17:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+bank%1:14:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+bank%1:17:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+bank%1:04:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+bank%1:06:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+bank%1:21:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+bank%1:17:02::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+bank%1:21:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+369204
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+369201
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+369202
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+369203
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+770005
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+770001
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+770003
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+770002
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+770004
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1067503
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1067504
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1067501
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+degree%1:10:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+degree%1:07:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+degree%1:26:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+degree%1:23:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+degree%1:07:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+degree%1:09:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+degree%1:23:03::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+difference%1:24:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+difference%1:10:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+difference%1:11:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+difference%1:07:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+difference%1:23:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+different%3:00:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+different%5:00:01:other:00
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+different%3:00:02::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+different%5:00:00:other:00
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+different%5:00:00:unusual:00
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+difficulty%1:26:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+difficulty%1:04:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+difficulty%1:09:02::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+difficulty%1:07:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+disc%1:06:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+disc%1:06:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+disc%1:25:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+disc%1:06:03::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1297001
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1297003
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1297006
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1297002
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1353101
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1353103
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1353102
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1353104
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1440301
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1440302
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1440303
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1446804
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1446801
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1446802
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1446803
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1892102
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1892104
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1892101
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1892106
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+1892103
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+hot%5:00:00:fresh:01
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+hot%3:00:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+hot%5:00:00:pungent:00
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+hot%3:00:02::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+hot%5:00:00:fast:01
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+hot%5:00:00:active:01
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+hot%5:00:00:good:01
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+hot%5:00:00:popular:00
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+image%1:07:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+image%1:09:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+image%1:06:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+image%1:09:02::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+image%1:18:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+image%1:10:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+important%3:00:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+important%3:00:04::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+important%3:00:02::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+important%5:00:00:influential:00
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+important%5:00:00:immodest:02
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+interest%1:07:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+interest%1:04:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+interest%1:21:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+interest%1:21:03::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+interest%1:09:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+interest%1:07:02::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+interest%1:14:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+judgment%1:09:04::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+judgment%1:09:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+judgment%1:04:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+judgment%1:10:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+judgment%1:07:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+judgment%1:04:02::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+judgment%1:09:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2439902
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2439904
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2439903
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2439901
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2439909
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2439906
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2439905
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2439907
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2555505
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2555502
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2555504
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2555503
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2555506
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2555501
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2644306
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2644303
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2644302
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2644305
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2644301
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2644304
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2822012
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2822013
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2822011
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2893205
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2893201
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+2893202
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+organization%1:14:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+organization%1:14:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+organization%1:09:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+organization%1:04:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+paper%1:06:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+paper%1:10:03::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+paper%1:10:02::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+paper%1:27:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+paper%1:10:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+paper%1:14:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+paper%1:10:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+party%1:11:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+party%1:14:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+party%1:14:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+party%1:18:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+party%1:14:02::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+performance%1:04:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+performance%1:10:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+performance%1:04:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+performance%1:22:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+performance%1:04:03::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+plan%1:09:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+plan%1:09:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+plan%1:06:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3165211
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3165220
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3165217
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3165221
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3165219
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3165210
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3165214
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3165218
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3165213
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3288301
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3288306
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3288302
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3288305
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3288304
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3313902
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3313903
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3313901
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3313905
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3313906
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3434804
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3434801
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3434802
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3434806
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3434803
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3434805
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3477802
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3477801
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3477803
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3597911
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3597906
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3597910
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+shelter%1:26:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+shelter%1:06:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+shelter%1:06:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+shelter%1:21:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+simple%5:00:00:easy:01
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+simple%3:00:02::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+simple%5:00:00:plain:01
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+simple%5:00:02:plain:01
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+simple%5:00:00:naive:00
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3893503
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3893505
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3893501
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3893508
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+3893507
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+solid%5:00:00:hard:01
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+solid%5:00:00:sound:01
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+solid%5:00:00:good:01
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+solid%5:00:00:honorable:00
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+solid%5:00:00:unbroken:02
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+solid%5:00:00:undiversified:00
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+solid%5:00:00:cubic:00
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+solid%3:00:02::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+solid%5:00:00:homogeneous:00
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+solid%5:00:00:plain:02
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+solid%3:00:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+sort%1:09:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+sort%1:18:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+sort%1:07:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+sort%1:22:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+source%1:15:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+source%1:10:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+source%1:10:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+source%1:18:01::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+source%1:09:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+source%1:18:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+source%1:06:00::
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4155303
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4155302
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4155304
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4155301
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4155305
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4155306
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4155307
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4198501
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4198504
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4198506
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4198503
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4198505
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4198502
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4198508
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4198507
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4198509
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4380104
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4380105
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4380108
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4380102
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4380101
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4380103
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4380107
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4380106
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4530705
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4530704
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4530701
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4530702
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4530703
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4636106
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4636107
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4636101
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4636102
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4636103
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4636110
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4636108
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4636104
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4640507
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4640508
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4640504
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4640501
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4640502
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4640509
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4711405
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4711403
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4711406
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4711401
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4711404
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4753408
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4753407
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4753403
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]
+4753402
+	[('phenomenon', 'NN'), ('canal', 'NN'), ('stressed', 'VBD'), ('terms', 'NNS'), ('He', 'PRP'), ('non', 'JJ'), ('cupped', 'VBD'), ('glass', 'NN'), ('Alexander', 'NNP'), ('majority', 'NN')]

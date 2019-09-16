@@ -1,0 +1,19 @@
+Q 2.1
+
+1. The company board1 of directors has seven members.
+-> [The, DT, company, NN, of, IP, directors, NN]
+
+2. Several loose board2 creaked as I walked on them.
+-> [Several ,JJ, loose, JJ, creaked VBD , as IP]
+
+3. We all board3 the plane for Oslo tomorrow.
+-> [We, WP, all, DT, the DT, plane, NN]
+
+4. John nailed the board2 over the window.
+-> [nailed VBD, the DT, over IP, the DT]
+
+5. Bella wanted to board3 the bus to Chicago.
+-> [wanted, VBD, to, VB, the, DT, bus, NN]
+
+6. They needed to get more senators on board4 for the bill to pass.
+-> [senators, PP, on, IP, for, IP the, DT]

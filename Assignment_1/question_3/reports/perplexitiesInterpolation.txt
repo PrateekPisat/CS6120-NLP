@@ -1,0 +1,62 @@
+Q3.2.1 First, report all the candidate lambdas used for grid search and the corresponding perplexities
+you got on the held-out set
+
+->
+Lambda1 = 0.1, Lambda2 = 0.1, Lambda3 = 0.8, perplexity = 1127814.5627976512
+Lambda1 = 0.1, Lambda2 = 0.2, Lambda3 = 0.7, perplexity = 1099988.14295055
+Lambda1 = 0.1, Lambda2 = 0.3, Lambda3 = 0.6, perplexity = 1076492.5266483005
+Lambda1 = 0.1, Lambda2 = 0.4, Lambda3 = 0.5, perplexity = 1056057.7631739818
+Lambda1 = 0.1, Lambda2 = 0.5, Lambda3 = 0.4, perplexity = 1038045.1268779602
+Lambda1 = 0.1, Lambda2 = 0.6, Lambda3 = 0.3, perplexity = 1022090.347266993
+Lambda1 = 0.1, Lambda2 = 0.7, Lambda3 = 0.2, perplexity = 1008011.7413553456
+Lambda1 = 0.1, Lambda2 = 0.8, Lambda3 = 0.1, perplexity = 995844.6938612829
+Lambda1 = 0.2, Lambda2 = 0.1, Lambda3 = 0.7, perplexity = 1065718.2130860514
+Lambda1 = 0.2, Lambda2 = 0.2, Lambda3 = 0.6, perplexity = 1041876.1259318806
+Lambda1 = 0.2, Lambda2 = 0.3, Lambda3 = 0.5, perplexity = 1021693.2569852783
+Lambda1 = 0.2, Lambda2 = 0.4, Lambda3 = 0.4, perplexity = 1004074.5697911468
+Lambda1 = 0.2, Lambda2 = 0.5, Lambda3 = 0.3, perplexity = 988512.3534215981
+Lambda1 = 0.2, Lambda2 = 0.6, Lambda3 = 0.2, perplexity = 974765.8045351782
+Lambda1 = 0.3, Lambda2 = 0.1, Lambda3 = 0.6, perplexity = 1018143.1121790991
+Lambda1 = 0.3, Lambda2 = 0.2, Lambda3 = 0.5, perplexity = 996795.6553742039
+Lambda1 = 0.3, Lambda2 = 0.3, Lambda3 = 0.4, perplexity = 978813.72734147
+Lambda1 = 0.3, Lambda2 = 0.4, Lambda3 = 0.3, perplexity = 963180.8967255253
+Lambda1 = 0.3, Lambda2 = 0.5, Lambda3 = 0.2, perplexity = 949484.1151694063
+Lambda1 = 0.4, Lambda2 = 0.1, Lambda3 = 0.5, perplexity = 979659.4848797409
+Lambda1 = 0.4, Lambda2 = 0.2, Lambda3 = 0.4, perplexity = 960052.545196142
+Lambda1 = 0.4, Lambda2 = 0.3, Lambda3 = 0.3, perplexity = 943712.6729681098
+Lambda1 = 0.4, Lambda2 = 0.4, Lambda3 = 0.2, perplexity = 929684.3638663518
+Lambda1 = 0.4, Lambda2 = 0.5, Lambda3 = 0.1, perplexity = 917717.5312912375
+Lambda1 = 0.5, Lambda2 = 0.1, Lambda3 = 0.4, perplexity = 947635.1161473038
+Lambda1 = 0.5, Lambda2 = 0.2, Lambda3 = 0.3, perplexity = 929346.208949782
+Lambda1 = 0.5, Lambda2 = 0.3, Lambda3 = 0.2, perplexity = 914386.2860961057
+Lambda1 = 0.5, Lambda2 = 0.4, Lambda3 = 0.1, perplexity = 901934.534634747
+Lambda1 = 0.6, Lambda2 = 0.1, Lambda3 = 0.3, perplexity = 920632.4606771116
+Lambda1 = 0.6, Lambda2 = 0.2, Lambda3 = 0.2, perplexity = 903456.9524324603
+Lambda1 = 0.7, Lambda2 = 0.1, Lambda3 = 0.2, perplexity = 897915.6145714032
+Lambda1 = 0.8, Lambda2 = 0.1, Lambda3 = 0.1, perplexity = 879451.3932271983
+
+
+Q3.2.2. Report the best λs chosen from the grid search, and explain why it’s chosen
+(i.e. leveraging the perplexities achieved on the held-out set).
+
+->
+Lambda1 = 0.8, Lambda2 = 0.1, Lambda3 = 0.1, perplexity = 879451.3932271983
+This was chosen because it provided the lowest perplexity, since it weighted the tri-gram
+probability more the bi-grams and uni-grams.
+
+
+Q3.2.3. Report the perplexity for each file in the test set (use the best λs obtained from
+grid search to calculate perplexity on test set).
+
+-> perplexity(lambda1 = 0.8, lambda2 = 0.1, lambda3 = 0.1):
+ test01.txt = 961.0978854968223,
+ test02.txt = 697.3892623780795
+
+
+Q3.2.4. Based on the test file’s perplexities you got write a brief observation comparing the test
+files.
+
+-> Since the first test file has a much higher perplexity as compared to the the second file, the
+first file consists of a lot of words that are not included in the training files/set. While the
+second file has a comparatively lower perplexity, indicating that the contents of it mush be
+similar to those of the training files/set

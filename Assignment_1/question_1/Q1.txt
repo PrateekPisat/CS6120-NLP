@@ -1,0 +1,52 @@
+Q1.
+1. D1 : Murder, Betrayal, Enemy, Conspiracy
+
+|V| = 13
+
+Prior Probabilities:
+P(Action) = 4/8 = 0.5
+P(Drama) = 4/8 = 0.5
+
+Conditional Probabilities:
+P(Murder|Action) = (1+0.2)/(16 + 0.2*13) = 0.06
+P(Betrayal|Action) = (1+0.2)/(16 + 0.2*13) = 0.06
+P(Enemy|Action) = (1+0.2)/(16 + 0.2*13) = 0.06
+P(Conspiracy|Action) = (1+0.2)/(16 + 0.2*13) = 0.06
+
+P(Murder|Drama) = (2+0.2)/(16 + 0.2*13) = 0.11
+P(Betrayal|Drama) = (2+0.2)/(16 + 0.2*13) = 0.11
+P(Enemy|Drama) = (2+0.2)/(16 + 0.2*13) = 0.11
+P(Conspiracy|Drama) = (3+0.2)/(16 + 0.2*13) = 0.17
+
+Posterior Probabilities:
+P(Action|D1) = 0.5 * 0.6 * 0.6 * 0.6 * 0.6 = 0.00000648
+P(Drama|D1) = 0.5 * 0.11 * 0.11 * 0.11 * 0.17 = 0.000113135
+
+Since P(Drama|D1) > P(Action|D1)
+D1 would be classified as Drama
+
+----------------------------------------------------------------------------------
+
+2. D2 : Cars, Treasure, Robbery, Crash
+
+Prior Probabilities:
+P(Action) = 4/8 = 0.5
+P(Drama) = 4/8 = 0.5
+
+Conditional Probabilities:
+P(Cars|Action) = (3 + 0.2) / (16 + 0.2*13) = 0.17
+P(Treasure|Action) = (3 + 0.2) / (16 + 0.2*13) = 0.17
+P(Robbery|Action) = (2 + 0.2) / (16 + 0.2*13) = 0.11
+P(Crash|Action) = (2 + 0.2) / (16 + 0.2*13) = 0.11
+
+P(Cars|Drama) = (1 + 0.2) / (16 + 0.2*13) = 0.06
+P(Treasure|Drama) = (1 + 0.2) / (16 + 0.2*13) = 0.06
+P(Robbery|Drama) = (1 + 0.2) / (16 + 0.2*13) = 0.06
+P(Crash|Drama) = (0 + 0.2) / (16 + 0.2*13) = 0.01
+
+Posterior Probabilities:
+P(Action|D2) = 0.5 * 0.17 * 0.17 * 0.11 * 0.11 = 0.000174845
+P(Drama|D2) = 0.5 * 0.06 * 0.06 * 0.06 * 0.01 = 0.00000108
+
+Since P(Action|D2) > P(Drama|D2)
+D2 would be classified as Action
