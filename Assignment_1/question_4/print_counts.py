@@ -1,6 +1,8 @@
 import os
 
+
 def print_unigram_counts(counts, file):
+    """Report tag counts to a file."""
     file = '.{sep}{dir}{sep}{file}'.format(sep=os.sep, dir='reports', file=file)
     with open(file, 'a') as f:
         f.write("Unigrm Counts\n\n")
@@ -10,6 +12,7 @@ def print_unigram_counts(counts, file):
 
 
 def print_bigram_counts(counts, file, header=None):
+    """Report word_tag counts or tag-bigram counts to a file."""
     file = '.{sep}{dir}{sep}{file}'.format(sep=os.sep, dir='reports', file=file)
     with open(file, 'a') as f:
         f.write("{header}\n\n".format(header=header))
