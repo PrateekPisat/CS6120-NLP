@@ -10,15 +10,17 @@ from print_counts import print_bigram_counts, print_unigram_counts
 
 
 def get_training_data():
+    """Return a list of training file paths."""
     training = list()
     dirc = '.{sep}{dir}{sep}'.format(sep=os.sep, dir='train')
     for _, __, files in os.walk(dirc):
         for file in files:
-            training += [dirc+ os.sep + file]
+            training += [dirc + os.sep + file]
     return training
 
 
 def get_test_data():
+    """Return a list of test file paths."""
     testing = list()
     dirc = '.{sep}{dir}{sep}'.format(sep=os.sep, dir='test')
     for _, __, files in os.walk(dirc):
@@ -28,6 +30,7 @@ def get_test_data():
 
 
 def _generate_ngrams(words_list, n):
+    """Return ngrams for the given word list."""
     ngrams_list = []
     for num in range(0, len(words_list) - (n - 1)):
         ngram = tuple(words_list[num: num + n])
@@ -54,6 +57,7 @@ def get_unknown_words(files):
 
 
 def setup_counts(files, report=False):
+    """Setup word_tag, tag, and tag_bigram counts."""
     words_tag_counts = dict()
     unigram_counts = dict()
     bigram_counts = dict()
@@ -100,6 +104,8 @@ def setup_counts(files, report=False):
 
 
 def setup_probabilities(unigram_counts, bigram_counts, words_tag_counts, vocab):
+    """Setup initial, transition and emmission probabilities using the previously
+    generated counts."""
     initial_prob = dict()
     transition_prob = dict()
     emmission_prob = dict()
@@ -128,13 +134,15 @@ def setup_probabilities(unigram_counts, bigram_counts, words_tag_counts, vocab):
 
 
 def build_sentences(model, report=False):
-    sents =  [build_sentence(model) for i in range(5)]
+    """Return 5 sentences using initial, transition and emmission probabilities."""
+    sents = [build_sentence(model) for i in range(5)]
     if report:
         print_sentences(sents)
-    return  sents
+    return sents
 
 
 def build_sentence(model):
+    """Return one sentence using initial, transition and emmission probabilities."""
     next_token = "<START>"
     tag_sentence = ""
     while next_token != "<END>":
@@ -157,6 +165,7 @@ def build_sentence(model):
 
 
 def get_sentence_prob(sentence, model):
+    """Return the probability for occurance the given sentence."""
     prob = 1
     prev = "<START>"
     words_tags = sentence.split()
@@ -171,6 +180,7 @@ def get_sentence_prob(sentence, model):
 
 
 def get_pos_tags_for(files, model):
+    """For a given test file, tag each word with its POS tag."""
     sentences_to_print = []
     regex = re.compile(r'< sentence ID = \d* >')
     for file in files:
@@ -195,13 +205,19 @@ def get_pos_tags_for(files, model):
 
 
 def veterbi(filtered_sent, model):
+    """Return the pos tags for a given sentence."""
     v_matrix = [[0 for obs_t in filtered_sent] for state in model.pi.keys()]
     backpointer = [[0 for obs_t in filtered_sent] for state in model.pi.keys()]
-    max_prob_for_s = dict()
 
-    max_prob_for_s, backpointer, v_matrix = _init_step(filtered_sent, max_prob_for_s, backpointer, v_matrix, model)
-    max_prob_for_s, backpointer, v_matrix = _recuresion_step(filtered_sent, max_prob_for_s, backpointer, v_matrix, model)
-    best_back_path_pointer, best_path_prob = _termination_step(filtered_sent, max_prob_for_s, backpointer, v_matrix, model)
+    backpointer, v_matrix = _init_step(
+        filtered_sent, backpointer, v_matrix, model
+    )
+    backpointer, v_matrix = _recuresion_step(
+        filtered_sent, backpointer, v_matrix, model
+    )
+    best_back_path_pointer, best_path_prob = _termination_step(
+        filtered_sent, backpointer, v_matrix, model
+    )
 
     # Buld back path
     current_col = len(filtered_sent) - 1
@@ -214,17 +230,19 @@ def veterbi(filtered_sent, model):
     return best_back_path[::-1], best_path_prob
 
 
-def _init_step(filtered_sent, max_prob_for_s, backpointer, v_matrix, model):
+def _init_step(filtered_sent, backpointer, v_matrix, model):
+    """Init step for veterbi."""
     for index_s, state in enumerate(model.pi):
         obs_0 = filtered_sent[0]
         if obs_0 not in model.vocab:
             obs_0 = "<UNK>"
         v_matrix[index_s][0] = model.pi[state] * model.emmission_prob[state][obs_0]
         backpointer[index_s][0] = 0
-    return max_prob_for_s, backpointer, v_matrix
+    return backpointer, v_matrix
 
 
-def _recuresion_step(filtered_sent, max_prob_for_s, backpointer, v_matrix, model):
+def _recuresion_step(filtered_sent, backpointer, v_matrix, model):
+    """Recursion step for veterbi."""
     for t in range(1, len(filtered_sent)):
         for index_s, state in enumerate(model.pi):
             obs_t = filtered_sent[t]
@@ -239,10 +257,11 @@ def _recuresion_step(filtered_sent, max_prob_for_s, backpointer, v_matrix, model
                     arg_max = si_1
             v_matrix[index_s][t] = max
             backpointer[index_s][t] = arg_max
-    return max_prob_for_s, backpointer, v_matrix
+    return backpointer, v_matrix
 
 
-def _termination_step(filtered_sent, max_prob_for_s, backpointer, v_matrix, model):
+def _termination_step(filtered_sent, backpointer, v_matrix, model):
+    """Termination step for veterbi."""
     T = len(filtered_sent) - 1
     max = 0
     for index, _ in enumerate(model.pi):
@@ -253,15 +272,8 @@ def _termination_step(filtered_sent, max_prob_for_s, backpointer, v_matrix, mode
     return best_back_path_pointer, max
 
 
-def _get_vocab_size(count_dict):
-    unique_words = set()
-    for wi_1 in count_dict:
-        for wi in list(count_dict[wi_1].keys()):
-            unique_words.add(tuple([*wi_1, wi]))
-    return len(unique_words)
-
-
 def print_sentences(sentences):
+    """Report the generated sentences to a file."""
     file = '.{sep}{dir}{sep}{file}'.format(sep=os.sep, dir='reports', file='sentences.txt')
     with open(file, 'w') as f:
         f.truncate()
