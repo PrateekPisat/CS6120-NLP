@@ -5,7 +5,6 @@ from collections import defaultdict
 import numpy as np
 from bs4 import BeautifulSoup
 from nltk import pos_tag, bigrams, trigrams
-from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
 from util import (
@@ -14,8 +13,6 @@ from util import (
     report_to_file,
     find_in_list_after_index
 )
-
-stop_words = set(stopwords.words('english'))
 
 
 def get_vocab(tagged_vocab, report=False):
@@ -281,4 +278,4 @@ if __name__ == "__main__":
 
     # # Feature Selection
     all_features = np.array(list(vocab_bow) + list(vocab_colloc))
-    top_features = get_all_top_features(bow_feature_vectors, coll_vectors, all_features, report=True)
+    top_features = get_all_top_features(bow_feature_vectors, coll_vectors, all_features)

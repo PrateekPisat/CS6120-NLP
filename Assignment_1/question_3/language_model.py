@@ -1,4 +1,3 @@
-import logging
 import math
 
 from nltk.tokenize import sent_tokenize, word_tokenize
@@ -58,21 +57,9 @@ def get_interpolation_model(training_set, held_out_set):
             held_out_set, trigram_model, bigram_model, unigram_model,
             lambda1, lambda2, lambda3, trigram_model.vocab
         )
-        logging.warning(
-            "Lambda1 = {}, Lambda2 = {}, Lambda3 = {}, perplexity = {}".format(
-                    lambda1, lambda2, lambda3, per
-                )
-            )
         if per < smallest:
             smallest = per
             best_lambdas = tuple([lambda1, lambda2, lambda3])
-
-    logging.warning("Best Lambdas")
-    logging.warning(
-        "Lambda1 = {}, Lambda2 = {}, Lambda3 = {}, perplexity = {}".format(
-                *best_lambdas, per
-            )
-        )
     return InterpolationModel(unigram_model, bigram_model, trigram_model, *best_lambdas)
 
 

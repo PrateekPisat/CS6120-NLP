@@ -1,12 +1,12 @@
 Q. Report the perplexity for each file in the test set (for both the λ values).
 ->
  perplexity(λ=0.1):
-  test01.txt = 6636.356565072647
-  test02.txt = 2754.233450897504
+  test01.txt = 4877.334553678042
+  test02.txt = 2106.2768193293577
 
   perplexity(λ=0.3):
-   test01.txt = 10938.787877520415
-   test02.txt = 5337.089816241469
+   test01.txt = 7899.994879400061
+   test02.txt = 3991.0809026761635
 
 Q. Based on the test file’s perplexities you got write a brief observation comparing the test files.
 

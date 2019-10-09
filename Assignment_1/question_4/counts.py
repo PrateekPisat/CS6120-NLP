@@ -1,11 +1,9 @@
-import logging
 import os
 import random
 import re
 
-import numpy as np
 from nltk.tag import str2tuple
-from nltk.tokenize import sent_tokenize, word_tokenize
+from nltk.tokenize import sent_tokenize
 
 from models import HMMPosTagger
 from print_counts import print_bigram_counts, print_unigram_counts
@@ -13,24 +11,26 @@ from print_counts import print_bigram_counts, print_unigram_counts
 
 def get_training_data():
     training = list()
-    for _, __, files in os.walk('./train'):
+    dirc = '.{sep}{dir}{sep}'.format(sep=os.sep, dir='train')
+    for _, __, files in os.walk(dirc):
         for file in files:
-            training += ["./train/" + file]
+            training += [dirc+ os.sep + file]
     return training
 
 
 def get_test_data():
     testing = list()
-    for _, __, files in os.walk('./test'):
+    dirc = '.{sep}{dir}{sep}'.format(sep=os.sep, dir='test')
+    for _, __, files in os.walk(dirc):
         for file in files:
-            testing += ["./test/" + file]
+            testing += [dirc + file]
     return testing
 
 
 def _generate_ngrams(words_list, n):
     ngrams_list = []
     for num in range(0, len(words_list) - (n - 1)):
-        ngram = tuple(words_list[num : num + n])
+        ngram = tuple(words_list[num: num + n])
         ngrams_list.append(ngram)
     return ngrams_list
 
@@ -44,7 +44,6 @@ def get_unknown_words(files):
             buffer = f.read()
             sents = sent_tokenize(buffer)
             for sent in sents:
-                tags_in_sents = list()
                 tagged_words = sent.strip().replace("\n", " ").replace("\t", " ")
                 words_tags = [str2tuple(t) for t in tagged_words.split()]
                 for word, _ in words_tags:
@@ -55,7 +54,6 @@ def get_unknown_words(files):
 
 
 def setup_counts(files, report=False):
-    words_and_tags = list()
     words_tag_counts = dict()
     unigram_counts = dict()
     bigram_counts = dict()
@@ -112,11 +110,11 @@ def setup_probabilities(unigram_counts, bigram_counts, words_tag_counts, vocab):
 
     for ti_1 in unigram_counts:
         for ti in unigram_counts:
-                transition_prob[ti_1] = transition_prob.get(ti_1, dict())
-                try:
-                    transition_prob[ti_1][ti] = bigram_counts[ti_1].get(ti, 0) / unigram_counts[ti_1]
-                except KeyError:
-                    transition_prob[ti_1][ti] = 0
+            transition_prob[ti_1] = transition_prob.get(ti_1, dict())
+            try:
+                transition_prob[ti_1][ti] = bigram_counts[ti_1].get(ti, 0) / unigram_counts[ti_1]
+            except KeyError:
+                transition_prob[ti_1][ti] = 0
 
     for ti in unigram_counts:
         for wi in vocab:
@@ -127,6 +125,13 @@ def setup_probabilities(unigram_counts, bigram_counts, words_tag_counts, vocab):
                 emmission_prob[ti][wi] = 0
 
     return initial_prob, transition_prob, emmission_prob
+
+
+def build_sentences(model, report=False):
+    sents =  [build_sentence(model) for i in range(5)]
+    if report:
+        print_sentences(sents)
+    return  sents
 
 
 def build_sentence(model):
@@ -140,27 +145,27 @@ def build_sentence(model):
     tag_sentence = tag_sentence.strip().rstrip("<END>")
 
     sentence = ""
-    prob = 1
     for tag in tag_sentence.split():
         population = list(model.emmission_prob[tag].keys())
         weights = list(model.emmission_prob[tag].values())
         next = random.choices(population, weights)[0]
         sentence += "{}/{} ".format(next, tag)
 
-    sentence_prob = get_sentence_prob(sentence)
+    sentence_prob = get_sentence_prob(sentence, model)
 
     return (sentence, sentence_prob)
 
-def get_sentence_prob(sentence):
-    prob = 0
+
+def get_sentence_prob(sentence, model):
+    prob = 1
     prev = "<START>"
     words_tags = sentence.split()
     for word_tag in words_tags:
         word, tag = word_tag.split("/")
         try:
-            prob += transition_prob[prev][tag] * emmission_prob[tag][word]
+            prob *= model.transition_prob[prev][tag] * model.emmission_prob[tag][word]
         except KeyError:
-            prob += transition_prob[prev][tag] * emmission_prob[tag]["<UNK>"]
+            prob *= model.transition_prob[prev][tag] * model.emmission_prob[tag]["<UNK>"]
         prev = tag
     return prob
 
@@ -221,7 +226,6 @@ def _init_step(filtered_sent, max_prob_for_s, backpointer, v_matrix, model):
 
 def _recuresion_step(filtered_sent, max_prob_for_s, backpointer, v_matrix, model):
     for t in range(1, len(filtered_sent)):
-        found_better_tag = False
         for index_s, state in enumerate(model.pi):
             obs_t = filtered_sent[t]
             if obs_t not in model.vocab:
@@ -241,7 +245,7 @@ def _recuresion_step(filtered_sent, max_prob_for_s, backpointer, v_matrix, model
 def _termination_step(filtered_sent, max_prob_for_s, backpointer, v_matrix, model):
     T = len(filtered_sent) - 1
     max = 0
-    for index, state in enumerate(model.pi):
+    for index, _ in enumerate(model.pi):
         if v_matrix[index][T] >= max:
             max = v_matrix[index][T]
             best_back_path_pointer = index
@@ -257,15 +261,24 @@ def _get_vocab_size(count_dict):
     return len(unique_words)
 
 
+def print_sentences(sentences):
+    file = '.{sep}{dir}{sep}{file}'.format(sep=os.sep, dir='reports', file='sentences.txt')
+    with open(file, 'w') as f:
+        f.truncate()
+        for sentence, prob in sentences:
+            f.write("{}\n".format(sentence))
+            f.write("Prob: {prob}\n".format(prob=prob))
+
 
 if __name__ == "__main__":
     training_data = get_training_data()
     test_files = get_test_data()
     unigram_counts, bigram_counts, words_tag_counts, vocab = setup_counts(training_data)
-    # initial_prob, transition_prob, emmission_prob = setup_probabilities(
-    #     unigram_counts, bigram_counts, words_tag_counts, vocab
-    # )
-    # model = HMMPosTagger(initial_prob, transition_prob, emmission_prob, vocab)
-    # sentences = [build_sentence(model) for i in range(5)]
+    initial_prob, transition_prob, emmission_prob = setup_probabilities(
+        unigram_counts, bigram_counts, words_tag_counts, vocab
+    )
+    model = HMMPosTagger(initial_prob, transition_prob, emmission_prob, vocab)
 
-    # get_pos_tags_for(test_files, model)
+    sentences = build_sentences(model)
+
+    get_pos_tags_for(test_files, model)
