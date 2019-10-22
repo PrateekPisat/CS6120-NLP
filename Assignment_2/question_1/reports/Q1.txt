@@ -1,0 +1,24 @@
+****Q1 Counts****
+
+sentence counts = 24918
+
+Average Verbs = 5.421261738502287
+I am using the POS property of a given word provided by spaCy, and checking if the values is `VERB`
+
+preposition count = 25797
+
+Top Prepositions = ['of', 'for', 'in']
+
+Entity count = 5342
+
+Unique Entity count = 3377
+
+1. Incorrectly tokenizes sentences and hence incorrectly assigns POS tags, which lead to incorrect dependancy arcs.
+eg.
+The sentence "Right down to the ATM. " is parsed as :
+-> Right ADV down ADP to ADP the DET ATM. PROPN SPACE
+With a dependancy arc  `Right -> ATM.` labeled `PUNCT`. Since `ATM.` is not the puncuation, there should not exists
+an arc.
+A possible solution to this would to train the parser on more/relavent data, for with we would be using it on.
+
+2.
