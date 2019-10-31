@@ -30,9 +30,9 @@ def build_vocab(pos_training_files, neg_training_files, threshold=300):
     return filtered_vocab
 
 
-def get_bow_vectors(pos_training_files, neg_training_files):
+def get_bow_vectors(pos_training_files, neg_training_files, test=False):
     path = ".{sep}models{sep}model_bow.csv".format(sep=os.sep)
-    if os.path.exists(path):
+    if os.path.exists(path) and not test:
         df_shuffled = pd.read_csv(path)
     else:
         # Get vocab
@@ -59,8 +59,10 @@ def get_bow_vectors(pos_training_files, neg_training_files):
         # Shuffle data
         df = pd.DataFrame(data, columns=[*vocab, "Target"])
         df_shuffled = df.sample(frac=1)
-        # Dump datagrame as csv
-        df_shuffled.to_csv(path, index=False)
+        # Don't cache test vectors.
+        if not test:
+            # Dump datagrame as csv
+            df_shuffled.to_csv(path, index=False)
     # return results.
     return df_shuffled
 
@@ -168,7 +170,7 @@ def get_MLE_model(
 
 
 def test_best_model(model, test_files):
-    review_vectors = get_term_feequency(test_files)
+    review_vectors = get_bow_vectors(test_files, [])
     for review in review_vectors:
         model.predict(review)
         import pdb; pdb.set_trace()
@@ -256,7 +258,7 @@ def get_training_files():
 
 def get_test_files():
     files = []
-    directory = ".{sep}{dir}{sep}".format(sep=os.sep, dir="test")
+    directory = ".{sep}test{sep}".format(sep=os.sep)
 
     for _, __, files in os.walk(directory):
         for f in files:
@@ -267,6 +269,7 @@ def get_test_files():
 if __name__ == "__main__":
     pos, neg = get_training_files()
     test_files = get_test_files()
+    import pdb; pdb.set_trace()
     model = get_MLE_model(pos, neg, get_bow_vectors)
-    test_best_model(test_files)
+    test_best_model(model, test_files)
     import pdb; pdb.set_trace()
