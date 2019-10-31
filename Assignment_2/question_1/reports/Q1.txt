@@ -22,3 +22,8 @@ an arc.
 A possible solution to this would to train the parser on more/relavent data, for with we would be using it on.
 
 2. The problem with incorrect POS tagging causes more problems, for example, In the following sentence:
+
+Hands NOUN down ADP the DET best ADJ damn ADJ BBQ PROPN in ADP Arizona! PROPN
+
+The tokenizer incorrectly tags BBQ as a proper noun, and damn as a Adjective.
+Due to which the dependancy edge between "BBQ" and "damn" is incorrectly labeled as a adjective modifier where it should have been a compound noun.
