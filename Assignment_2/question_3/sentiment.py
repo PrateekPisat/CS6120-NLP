@@ -48,14 +48,18 @@ def get_bow_vectors(pos_training_files, neg_training_files, test=False):
             review_vector = Counter()
             for word in vocab:
                 review_vector[word] = word_counts[word] + vector[word]
-            data += [list(review_vector.values()) + [0]]
+            data += [
+                list(review_vector.values()) + [0] if not test else list(review_vector.values())
+            ]
         # Create negative vectors
         for file in file_opener(neg_training_files):
             word_counts = Counter([token.text for token in nlp(file.read())])
             review_vector = Counter()
             for word in vocab:
                 review_vector[word] = word_counts[word] + vector[word]
-            data += [list(review_vector.values()) + [1]]
+            data += [
+                list(review_vector.values()) + [1] if not test else list(review_vector.values())
+            ]
         # Shuffle data
         df = pd.DataFrame(data, columns=[*vocab, "Target"])
         df_shuffled = df.sample(frac=1)
@@ -67,9 +71,9 @@ def get_bow_vectors(pos_training_files, neg_training_files, test=False):
     return df_shuffled
 
 
-def get_google_vectors(pos_training_files, neg_training_files):
+def get_google_vectors(pos_training_files, neg_training_files, test=False):
     cached_model_path = ".{sep}models{sep}model_google.csv".format(sep=os.sep)
-    if os.path.exists(cached_model_path):
+    if os.path.exists(cached_model_path) and not test:
         df_shuffled = pd.read_csv(cached_model_path)
     else:
         path = os.environ["model_path"]
@@ -78,16 +82,18 @@ def get_google_vectors(pos_training_files, neg_training_files):
 
         # Create positive vectors
         for file in file_opener(pos_training_files):
-            data.append(get_google_vector(file, model, 0))
+            data.append(get_google_vector(file, model, 0, test))
 
         # Create positive vectors
         for file in file_opener(neg_training_files):
-            data.append(get_google_vector(file, model, 1))
+            data.append(get_google_vector(file, model, 1, test))
         # Shuffle data
         df = pd.DataFrame(data)
         df_shuffled = df.sample(frac=1)
-        # Dump datagrame as csv
-        df_shuffled.to_csv(cached_model_path, index=False)
+        # Dont save if we are testing.
+        if not test:
+            # Dump datagrame as csv
+            df_shuffled.to_csv(cached_model_path, index=False)
     # return results.
     return df_shuffled
 
@@ -114,11 +120,11 @@ def get_MLE_model(
     pos_training_files,
     neg_training_files,
     vector_generator,
-    optimize_svd=False,
+    test=False,
     report=False,
 ):
     # Get training data
-    data = vector_generator(pos_training_files, neg_training_files)
+    data = vector_generator(pos_training_files, neg_training_files, test=test)
     # Parameters:
     act_fn = ['relu', 'logistic']
     hidden_layer_sizes = [5, 10, 15, 20, 25, 30, 35, 40]
@@ -169,14 +175,25 @@ def get_MLE_model(
 # helpers
 
 
-def test_best_model(model, test_files):
-    review_vectors = get_bow_vectors(test_files, [])
-    for review in review_vectors:
-        model.predict(review)
-        import pdb; pdb.set_trace()
+def test_best_model(test_model, test_files):
+    # Load google word model.
+    model_path = os.environ["model_path"]
+    g_model = word2vec.KeyedVectors.load_word2vec_format(model_path, binary=True)
+    for file in file_opener(test_files):
+        review_vector = np.array(get_google_vector(file, g_model, -1, test=True))
+        review_vector = review_vector.reshape(1, -1)
+        predict_class = test_model.predict(review_vector)[0]
+        if predict_class == 0:
+            with open("./reports/pos.txt", "a") as f:
+                f.write(file.name)
+                f.write("\n")
+        else:
+            with open("./reports/neg.txt", "a") as f:
+                f.write(file.name)
+                f.write("\n")
 
 
-def get_google_vector(file, model, y):
+def get_google_vector(file, model, y, test):
     # Create vectors
     review_vector = Counter()
     tokens = [token.text for token in nlp(file.read())]
@@ -186,7 +203,10 @@ def get_google_vector(file, model, y):
     result_array = sum(list(review_vector.values()))
     # Get average of total embeddings.
     result_array /= len(tokens)
-    return list(result_array) + [y]
+    if test:
+        return list(result_array)
+    else:
+        return list(result_array) + [y]
 
 
 def cross_validation_split(dataset, folds=10):
@@ -258,7 +278,7 @@ def get_training_files():
 
 def get_test_files():
     files = []
-    directory = ".{sep}test{sep}".format(sep=os.sep)
+    directory = ".{sep}tests{sep}".format(sep=os.sep)
 
     for _, __, files in os.walk(directory):
         for f in files:
@@ -268,8 +288,8 @@ def get_test_files():
 
 if __name__ == "__main__":
     pos, neg = get_training_files()
-    test_files = get_test_files()
-    import pdb; pdb.set_trace()
-    model = get_MLE_model(pos, neg, get_bow_vectors)
-    test_best_model(model, test_files)
-    import pdb; pdb.set_trace()
+    # test_files = get_test_files()
+    model = get_MLE_model(pos, neg, get_google_vectors)
+    test_best_model(
+        model, ["./tests/4941686.txt", "./tests/1862439071.txt"]
+    )
