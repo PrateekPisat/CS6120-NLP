@@ -98,21 +98,17 @@ def get_google_vectors(pos_training_files, neg_training_files, test=False):
     return df_shuffled
 
 
-def get_tf_idf_vectors(pos_training_files, neg_training_files):
-    # Build corpus
-    corpus = get_corpus(pos_training_files, neg_training_files)
-    # setup vectorizer
-    vectorizer = TfidfVectorizer()
-    X = vectorizer.fit_transform(corpus)
-    # get tragets
-    y = [0 for file in pos_training_files] + [1 for file in neg_training_files]
-    # Use SVD
-    svd = TruncatedSVD(n_components=700)
-    X = svd.fit_transform(X, y)
-    # build dataframe
-    df_x = pd.DataFrame(X)
-    df_y = pd.DataFrame(y)
-    df = pd.concat([df_x, df_y], axis=1)
+def get_tf_idf_vectors(pos_training_files, neg_training_files, test=False):
+    #  Seach for cached model
+    cached_model_path = ".{sep}models{sep}model_tf_idf.csv".format(sep=os.sep)
+    if os.path.exists(cached_model_path) and not test:
+        df = pd.read_csv(cached_model_path)
+    else:
+        df = get_tfidf_dataframe(pos_training_files, neg_training_files)
+        # Dont save if we are testing.
+        if not test:
+            # Dump datagrame as csv
+            df.to_csv(cached_model_path, index=False)
     return df
 
 
@@ -120,6 +116,7 @@ def get_MLE_model(
     pos_training_files,
     neg_training_files,
     vector_generator,
+    use_svd=False,
     test=False,
     report=False,
 ):
@@ -135,7 +132,7 @@ def get_MLE_model(
     scores = list()
     models = list()
     for split in splits:
-        X_train, y_train, X_test, y_test = train_test_split(split)
+        X_train, y_train, X_test, y_test = train_test_split(split, use_svd=True)
         for fn in act_fn:
             for rate in learning_rate:
                 for size in hidden_layer_sizes:
@@ -172,6 +169,50 @@ def get_MLE_model(
     return models[np.argmax(scores)]
 
 
+def get_words_for_topics(
+    pos_training_files,
+    neg_training_files,
+    n_topics=5,
+    n_words=20,
+    report=False
+):
+    topics_words_dict = dict()
+    # Build corpus
+    corpus = get_corpus(pos_training_files, neg_training_files)
+    # setup vectorizer
+    vectorizer = TfidfVectorizer(min_df=1, stop_words="english")
+    data = vectorizer.fit_transform(corpus)
+    # Conver to numpy arrays.
+    dataset = data.toarray()
+    # split train and test data.
+    X, y = np.hsplit(dataset, [len(dataset[0]) - 1])
+    # set up SVD model.
+    svd = TruncatedSVD(n_components=300)
+    # transform dataset
+    svd.fit_transform(X, y)
+    # get vocab
+    dictionary = vectorizer.get_feature_names()
+    dictionary = dictionary[:-1]
+    # get components
+    components = svd.components_.transpose()
+    # select the top n components
+    top_n, _ = np.hsplit(components, [n_topics])
+    # build datafram using top components
+    topics = pd.DataFrame(top_n)
+    topics["words"] = dictionary
+    # Sort by each row and fetch words
+    for i in range(n_topics):
+        imp_words = list(topics.sort_values(i, ascending=False)["words"][:n_words])
+        topics_words_dict[i] = imp_words
+    # report to file
+    if report:
+        path_to_file = ".{sep}reports{sep}Q3.txt".format(sep=os.sep)
+        with open(path_to_file, "a") as f:
+            f.write("\n\n")
+            for topic in topics_words_dict:
+                f.write("Topic {}: {}\n".format(topic, str(topics_words_dict[topic])))
+
+    return topics_words_dict
 # helpers
 
 
@@ -179,18 +220,41 @@ def test_best_model(test_model, test_files):
     # Load google word model.
     model_path = os.environ["model_path"]
     g_model = word2vec.KeyedVectors.load_word2vec_format(model_path, binary=True)
+    # Clear files
+    with open("./reports/pos.txt", "w") as f:
+        f.truncate()
+    with open("./reports/neg.txt", "w") as f:
+        f.truncate()
+    # classify reviews
     for file in file_opener(test_files):
         review_vector = np.array(get_google_vector(file, g_model, -1, test=True))
         review_vector = review_vector.reshape(1, -1)
         predict_class = test_model.predict(review_vector)[0]
         if predict_class == 0:
             with open("./reports/pos.txt", "a") as f:
-                f.write(file.name)
+                f.write(file.name.split(os.sep)[-1])
                 f.write("\n")
         else:
             with open("./reports/neg.txt", "a") as f:
-                f.write(file.name)
+                f.write(file.name.split(os.sep)[-1])
                 f.write("\n")
+
+
+def get_tfidf_dataframe(pos_training_files, neg_training_files):
+    # Build corpus
+    corpus = get_corpus(pos_training_files, neg_training_files)
+    # setup vectorizer
+    vectorizer = TfidfVectorizer(min_df=1, stop_words="english")
+    X = vectorizer.fit_transform(corpus)
+    # Get vecotrs as numpy arrays.
+    X = X.toarray()
+    # get tragets
+    y = [0 for file in pos_training_files] + [1 for file in neg_training_files]
+    # build dataframe
+    df_x = pd.DataFrame(X)
+    df_y = pd.DataFrame(y)
+    df = pd.concat([df_x, df_y], axis=1)
+    return df
 
 
 def get_google_vector(file, model, y, test):
@@ -231,7 +295,7 @@ def get_corpus(pos_training_files, neg_training_files):
     return corpus
 
 
-def train_test_split(dataset, split=0.80):
+def train_test_split(dataset, split=0.60, use_svd=False):
     train = list()
     train_size = split * len(dataset)
     test = list(dataset)
@@ -242,6 +306,11 @@ def train_test_split(dataset, split=0.80):
     test = np.array(test)
     X_train, y_train = np.hsplit(train, [len(train[0]) - 1])
     X_test, y_test = np.hsplit(test, [len(test[0]) - 1])
+    if use_svd:
+        # Use SVD
+        svd = TruncatedSVD(n_components=300)
+        X_train = svd.fit_transform(X_train, y_train.ravel())
+        X_test = svd.fit_transform(X_test, y_test.ravel())
     return X_train, y_train, X_test, y_test
 
 
@@ -277,19 +346,19 @@ def get_training_files():
 
 
 def get_test_files():
-    files = []
-    directory = ".{sep}tests{sep}".format(sep=os.sep)
+    test_files = []
+    test_directory = ".{sep}tests{sep}".format(sep=os.sep)
 
-    for _, __, files in os.walk(directory):
+    for _, __, files in os.walk(test_directory):
         for f in files:
-            files.append(directory + f)
-    return files
+            test_files.append(test_directory + f)
+    return test_files
 
 
 if __name__ == "__main__":
     pos, neg = get_training_files()
     # test_files = get_test_files()
-    model = get_MLE_model(pos, neg, get_google_vectors)
-    test_best_model(
-        model, ["./tests/4941686.txt", "./tests/1862439071.txt"]
-    )
+    words = get_words_for_topics(pos, neg, report=True)
+    import pdb; pdb.set_trace()
+    # model = get_MLE_model(pos, neg, get_tf_idf_vectors)
+    # test_best_model(model, test_files)
