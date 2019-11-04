@@ -357,8 +357,7 @@ def get_test_files():
 
 if __name__ == "__main__":
     pos, neg = get_training_files()
-    # test_files = get_test_files()
+    test_files = get_test_files()
     words = get_words_for_topics(pos, neg, report=True)
-    import pdb; pdb.set_trace()
-    # model = get_MLE_model(pos, neg, get_tf_idf_vectors)
-    # test_best_model(model, test_files)
+    model = get_MLE_model(pos, neg, get_google_vectors)
+    test_best_model(model, test_files)
