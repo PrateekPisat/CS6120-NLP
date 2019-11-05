@@ -182,8 +182,9 @@ def get_words_for_topics(
     # setup vectorizer
     vectorizer = TfidfVectorizer(min_df=1, stop_words="english")
     data = vectorizer.fit_transform(corpus)
-    # Conver to numpy arrays.
-    dataset = data.toarray()
+    # Convert to numpy arrays.
+    dataset = np.array([np.absolute(x) for x in data.toarray()])
+    import pdb; pdb.set_trace()
     # split train and test data.
     X, y = np.hsplit(dataset, [len(dataset[0]) - 1])
     # set up SVD model.
@@ -359,5 +360,5 @@ if __name__ == "__main__":
     pos, neg = get_training_files()
     test_files = get_test_files()
     words = get_words_for_topics(pos, neg, report=True)
-    model = get_MLE_model(pos, neg, get_google_vectors)
-    test_best_model(model, test_files)
+    # model = get_MLE_model(pos, neg, get_google_vectors)
+    # test_best_model(model, test_files)
