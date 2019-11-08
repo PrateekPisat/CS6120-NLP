@@ -1,0 +1,9 @@
+PITTSBURGH (AP) -- A new computer virus can allow documents to be e-mailed to other people without warning, a potential security breach that should worry businesses and governments, an expert at Carnegie Mellon University said Saturday.
+The ``Melissa macro'' or W97M--Melissa virus spreads via infected e-mail and attacks computers loaded with Microsoft's widely used Word 97 or Word 2000 programs, according to CERT -- or Computer Emergency Response Team -- Carnegie Mellon's Department of Defense-funded computer security team.
+CERT first heard of the virus Friday afternoon and its members worked through the night to analyze the virus and develop a fix, CERT manager Katherine Fithen said.
+The first, in 1994, warned of a virus that allowed computer burglars to collect passwords.
+If a computer user opens an infected Word-format document, the virus propagates itself by reading the user's e-mail address book and sending an infected message to the first 50 entries, CERT said.
+NEW YORK (AP) -- The FBI on Friday tried to track the author of a file-destroying computer virus that has hit some of the nation's biggest corporations and infected tens of thousands of machines.
+Software companies posted new virus-killing programs on their Web sites to attack the Worm.Explore.Zip virus, which enters machines in almost the same way as the recent Melissa virus -- by disguising itself as a friendly piece of e-mail.
+Melissa infected hundreds of thousands of computers, but there were signs Friday that the new virus may not be spreading as quickly.
+Still, it hit

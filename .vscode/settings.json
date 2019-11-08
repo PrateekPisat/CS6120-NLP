@@ -1,4 +1,7 @@
 {
     "python.pythonPath": "/home/prateek/.pyenv/versions/nlp/bin/python",
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "files.associations": {
+        "D0650.C": "cpp"
+    }
 }

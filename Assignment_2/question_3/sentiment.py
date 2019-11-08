@@ -33,7 +33,7 @@ def build_vocab(pos_training_files, neg_training_files, threshold=300):
 def get_bow_vectors(pos_training_files, neg_training_files, test=False):
     path = ".{sep}models{sep}model_bow.csv".format(sep=os.sep)
     if os.path.exists(path) and not test:
-        df_shuffled = pd.read_csv(path)
+        df = pd.read_csv(path)
     else:
         # Get vocab
         vocab = build_vocab(pos_training_files, neg_training_files)
@@ -62,19 +62,18 @@ def get_bow_vectors(pos_training_files, neg_training_files, test=False):
             ]
         # Shuffle data
         df = pd.DataFrame(data, columns=[*vocab, "Target"])
-        df_shuffled = df.sample(frac=1)
         # Don't cache test vectors.
         if not test:
             # Dump datagrame as csv
-            df_shuffled.to_csv(path, index=False)
+            df.to_csv(path, index=False)
     # return results.
-    return df_shuffled
+    return df
 
 
 def get_google_vectors(pos_training_files, neg_training_files, test=False):
     cached_model_path = ".{sep}models{sep}model_google.csv".format(sep=os.sep)
     if os.path.exists(cached_model_path) and not test:
-        df_shuffled = pd.read_csv(cached_model_path)
+        df = pd.read_csv(cached_model_path)
     else:
         path = os.environ["model_path"]
         model = word2vec.KeyedVectors.load_word2vec_format(path, binary=True)
@@ -89,13 +88,12 @@ def get_google_vectors(pos_training_files, neg_training_files, test=False):
             data.append(get_google_vector(file, model, 1, test))
         # Shuffle data
         df = pd.DataFrame(data)
-        df_shuffled = df.sample(frac=1)
         # Dont save if we are testing.
         if not test:
             # Dump datagrame as csv
-            df_shuffled.to_csv(cached_model_path, index=False)
+            df.to_csv(cached_model_path, index=False)
     # return results.
-    return df_shuffled
+    return df
 
 
 def get_tf_idf_vectors(pos_training_files, neg_training_files, test=False):
@@ -124,29 +122,29 @@ def get_MLE_model(
     data = vector_generator(pos_training_files, neg_training_files, test=test)
     # Parameters:
     act_fn = ['relu', 'logistic']
-    hidden_layer_sizes = [5, 10, 15, 20, 25, 30, 35, 40]
-    learning_rate = ["constant", "invscaling", "adaptive"]
+    hidden_layer_sizes = [30, 35, 40]
     # Get K-fold split(k=10)
     dataset = data.to_numpy()
-    splits = cross_validation_split(dataset, folds=10)
+    splits = cross_validation_split(dataset, folds=10, use_svd=use_svd)
     scores = list()
     models = list()
-    for split in splits:
-        X_train, y_train, X_test, y_test = train_test_split(split, use_svd=True)
-        for fn in act_fn:
-            for rate in learning_rate:
-                for size in hidden_layer_sizes:
-                    # build model
-                    model = MLPClassifier(
-                        activation=fn,
-                        learning_rate=rate,
-                        solver='lbfgs',
-                        alpha=1e-5,
-                        hidden_layer_sizes=(size, 10),
-                        random_state=1
-                    )
-                    models.append(model.fit(X_train, y_train.ravel()))
-                    scores.append(model.score(X_test, y_test.ravel()))
+    for fn in act_fn:
+        for size in hidden_layer_sizes:
+            # build model
+            model = MLPClassifier(
+                activation=fn,
+                solver='lbfgs',
+                alpha=1e-5,
+                hidden_layer_sizes=(size, 10),
+                random_state=1
+            )
+            score = 0
+            for X_train, y_train, X_test, y_test in splits:
+                model.fit(X_train, y_train.ravel())
+                score += model.score(X_test, y_test.ravel())
+                # import pdb; pdb.set_trace()
+            models.append(model)
+            scores.append(score / len(splits))
 
     # Report results
     if report:
@@ -184,7 +182,6 @@ def get_words_for_topics(
     data = vectorizer.fit_transform(corpus)
     # Convert to numpy arrays.
     dataset = np.array([np.absolute(x) for x in data.toarray()])
-    import pdb; pdb.set_trace()
     # split train and test data.
     X, y = np.hsplit(dataset, [len(dataset[0]) - 1])
     # set up SVD model.
@@ -274,7 +271,7 @@ def get_google_vector(file, model, y, test):
         return list(result_array) + [y]
 
 
-def cross_validation_split(dataset, folds=10):
+def cross_validation_split(dataset, folds=10, use_svd=False):
     dataset_split = list()
     dataset_copy = list(dataset)
     fold_size = int(len(dataset) / folds)
@@ -284,7 +281,7 @@ def cross_validation_split(dataset, folds=10):
             index = randrange(len(dataset_copy))
             fold.append(dataset_copy.pop(index))
         dataset_split.append(np.array(fold))
-    return dataset_split
+    return train_test_split(dataset_split, use_svd=use_svd)
 
 
 def get_corpus(pos_training_files, neg_training_files):
@@ -296,23 +293,22 @@ def get_corpus(pos_training_files, neg_training_files):
     return corpus
 
 
-def train_test_split(dataset, split=0.60, use_svd=False):
-    train = list()
-    train_size = split * len(dataset)
-    test = list(dataset)
-    while len(train) < train_size:
-        index = randrange(len(test))
-        train.append(test.pop(index))
-    train = np.array(train)
-    test = np.array(test)
-    X_train, y_train = np.hsplit(train, [len(train[0]) - 1])
-    X_test, y_test = np.hsplit(test, [len(test[0]) - 1])
-    if use_svd:
-        # Use SVD
-        svd = TruncatedSVD(n_components=300)
-        X_train = svd.fit_transform(X_train, y_train.ravel())
-        X_test = svd.fit_transform(X_test, y_test.ravel())
-    return X_train, y_train, X_test, y_test
+def train_test_split(cross_valid_splits, use_svd=False):
+    data = list()
+    data_to_split = list(cross_valid_splits)
+    for i in range(len(data_to_split)):
+        test = np.array(data_to_split.pop(i))
+        train = np.concatenate([*data_to_split])
+        X_train, y_train = np.hsplit(train, [len(train[0]) - 1])
+        X_test, y_test = np.hsplit(test, [len(test[0]) - 1])
+        if use_svd:
+            # Use SVD
+            svd = TruncatedSVD(n_components=300)
+            X_train = svd.fit_transform(X_train, y_train.ravel())
+            X_test = svd.fit_transform(X_test, y_test.ravel())
+        data.append((X_train, y_train, X_test, y_test))
+        data_to_split = list(cross_valid_splits)
+    return data
 
 
 def get_term_feequency(file, vocab):
@@ -359,6 +355,6 @@ def get_test_files():
 if __name__ == "__main__":
     pos, neg = get_training_files()
     test_files = get_test_files()
-    words = get_words_for_topics(pos, neg, report=True)
-    # model = get_MLE_model(pos, neg, get_google_vectors)
+    # words = get_words_for_topics(pos, neg, report=True)
+    model = get_MLE_model(pos, neg, get_tf_idf_vectors, use_svd=True, report=True)
     # test_best_model(model, test_files)
