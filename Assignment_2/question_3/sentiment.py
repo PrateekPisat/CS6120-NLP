@@ -154,4 +154,4 @@ if __name__ == "__main__":
     model = get_MLE_model(pos, neg, get_google_vectors)
     model = get_MLE_model(pos, neg, get_bow_vectors)
     model = get_MLE_model(pos, neg, get_tf_idf_vectors, use_svd=True)
-    test_best_model(model, test_files)
+    # test_best_model(model, test_files)
