@@ -2,7 +2,6 @@ import os
 from collections import defaultdict
 
 import spacy
-from spacy import displacy
 
 
 def build_doc(files, report=False):
@@ -14,7 +13,6 @@ def build_doc(files, report=False):
     nlp = spacy.load("en_core_web_sm")
     for file in file_opener(files):
         doc = nlp(file.read())
-        import pdb; pdb.set_trace()
         sent_count += get_total_sentences(doc)
         verb_count += get_verb_count(doc)
         prep_dict = get_prep_count(doc, prep_dict)

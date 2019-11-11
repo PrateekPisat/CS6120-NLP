@@ -2,5 +2,9 @@ nltk
 numpy
 bs4
 scikit-learn
-spacy
+spacy==2.1.0
 readability
+neuralcoref
+pandas
+language-check
+gensim
