@@ -56,22 +56,20 @@ def get_MLE_model(
             scores.append(score / len(splits))
 
     # Report results
+    best_model = models[np.argmax(scores)]
+    # Retrain on entire training set
+    X_train, y_train = np.hsplit(dataset, [len(dataset[0]) - 1])
+    best_model.fit(X_train, y_train.ravel())
+    score = best_model.score(X_train, y_train.ravel())
+    print(score)
     if report:
-        best_model = models[np.argmax(scores)]
-        # Retrain on entire training set
-        X_train, y_train = np.hsplit(dataset, [len(dataset[0]) - 1])
-        best_model.fit(X_train, y_train.ravel())
         # Report to file
         file = ".{sep}reports{sep}Q3.txt".format(sep=os.sep)
         with open(file, "a") as f:
             f.write("\n\n")
             f.write("3.2 \n")
             # Get Accuracy
-            f.write(
-                "Score for the training data = {}".format(
-                    best_model.score(X_train, y_train.ravel())
-                )
-            )
+            f.write("Score for the training data = {}".format(score))
 
     return models[np.argmax(scores)]
 
@@ -149,9 +147,9 @@ def test_best_model(test_model, test_files):
 if __name__ == "__main__":
     pos, neg = get_training_files()
     test_files = get_test_files()
-    words = get_words_for_topics(pos, neg)
-    print(words)
-    model = get_MLE_model(pos, neg, get_google_vectors)
+    # words = get_words_for_topics(pos, neg)
+    # print(words)
+    # model = get_MLE_model(pos, neg, get_google_vectors)
     model = get_MLE_model(pos, neg, get_bow_vectors)
-    model = get_MLE_model(pos, neg, get_tf_idf_vectors, use_svd=True)
+    # model = get_MLE_model(pos, neg, get_tf_idf_vectors, use_svd=True)
     # test_best_model(model, test_files)
